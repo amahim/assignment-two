@@ -3,7 +3,26 @@ body{
     font-family: "Inter", sans-serif;
     background-color: black;
 }
-
+p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9;
+    font-weight: 400;
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+button{
+    width: 224px;
+    height: 54px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 42px;
+    color: rgb(255, 255, 255);
+    background: rgb(230, 83, 60);
+    border: none;
+}
 /*habit sec styles*/
 
 .habit-container{
@@ -12,15 +31,9 @@ body{
     margin-top: 100px;
 }
 .habit-titles h3{
-    color: rgb(255, 255, 255);
-    font-size: 3rem;
-    font-weight: 900;
     margin-top: -8px;
 }
 .habit-titles p{
-    color: rgba(255, 255, 255, 0.5);
-    font-size: .9rem;
-    font-weight: 400;
     width: 60%;
     margin-top: -32px;
 }
@@ -42,9 +55,6 @@ body{
     font-weight: 600;
 }
 .habit-card p{
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 0.9;
-    font-weight: 400;
     margin-top: -15px;
 }
 .habit-card img{
@@ -56,18 +66,65 @@ body{
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
 }
+/*run sec starts here*/
+.run-container{
+    width: 80%;
+    /* height: 400px; */
+    border-radius: 18px;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+
+}
+.run-left{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 50%;
+}
+.run-left p{
+    width: 90%;
+    line-height: 20px;
+    margin-top: -20px;
+}
+.run-left button{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.run-right{
+    width: 40%;
+    height: 80%;
+    margin-right: 30px;
+    border-radius: 18px;
+    margin-top: 30px;
+
+}
+.run-right img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+
+
+
 /*responsive for small devices*/
 @media  screen and (max-width: 576px) {
+    p{
+        font-size: .8rem;
+        line-height: 20px;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    /*habit*/
     .habit-container{
         margin-top: 20px;
     }
-    .habit-titles h3{
-        font-size: 2rem;
-    }
     .habit-titles p{
-        font-size: .8rem;
         width: 90%;
-        line-height: 20px;
         margin-top: -10px;
     }
     .habit-cards{
@@ -75,5 +132,33 @@ body{
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+    /*run*/
+    .run-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .run-left{
+        margin-left: 50px;
+    }
+    .run-left{
+        width: 100%;
+    }
+    .run-left p{
+        width: 75%;
+    }
+    .run-left button{
+        width: 85%;
+    }
+    .run-right{
+        width: 80%;
+        height: 80%;
+        margin-right: 5px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .run-right img{
+        width: 100%;
+        height: 100%;
     }
 }
