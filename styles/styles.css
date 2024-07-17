@@ -3,6 +3,7 @@ body{
     font-family: "Inter", sans-serif;
     background-color: black;
 }
+/*default syles*/
 p{
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.9;
@@ -66,6 +67,7 @@ button{
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
 }
+
 /*run sec starts here*/
 .run-container{
     width: 80%;
@@ -108,8 +110,57 @@ button{
     border-radius: 18px;
 }
 
-
-
+/*team starts now*/
+.team-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.team-titles{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.team-titles h3{
+    margin-top: -8px;
+}
+.team-titles p{
+    width: 70%;
+    margin-top: -32px;
+}
+.team-grid{
+    margin-top:50px;
+    width: 100%;
+    /* height: 600px; */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.team-card img{
+    width: 320px;
+    height: 265px;
+    border-radius: 18px;
+    filter: brightness(70%);
+}
+.team-card{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+.team-info h5{
+    color: white;
+    font-size: 1.2rem;
+}
+.team-info p{
+    margin-top: -30px;
+}
+.team-info{
+    position: absolute;
+    top: 65%;
+    left: 1%;
+}
 /*responsive for small devices*/
 @media  screen and (max-width: 576px) {
     p{
@@ -160,5 +211,19 @@ button{
     .run-right img{
         width: 100%;
         height: 100%;
+    }
+    /*team*/
+    .team-titles p{
+        width: 85%;
+        margin-top: -18px;
+    }
+    .team-card img{
+        width: 305px;
+        margin-bottom: 10px;
+    }
+    .team-grid{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        
     }
 }
