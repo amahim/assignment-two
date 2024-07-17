@@ -1,4 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 body{
     font-family: "Inter", sans-serif;
+    background-color: black;
+}
+
+/*habit sec styles*/
+
+.habit-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.habit-titles h3{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: -8px;
+}
+.habit-titles p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .9rem;
+    font-weight: 400;
+    width: 60%;
+    margin-top: -32px;
+}
+.habit-titles{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.habit-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.habit-card h5{
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.habit-card p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9;
+    font-weight: 400;
+    margin-top: -15px;
+}
+.habit-card img{
+    border-radius: 50%;
+    border: 2px solid rgb(48, 48, 48);
+}
+.habit-cards{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+}
+/*responsive for small devices*/
+@media  screen and (max-width: 576px) {
+    .habit-container{
+        margin-top: 20px;
+    }
+    .habit-titles h3{
+        font-size: 2rem;
+    }
+    .habit-titles p{
+        font-size: .8rem;
+        width: 90%;
+        line-height: 20px;
+        margin-top: -10px;
+    }
+    .habit-cards{
+         margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
