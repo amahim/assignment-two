@@ -55,6 +55,17 @@ header{
     border-radius: 39px;
     padding: 0px 20px;
 }
+.home{
+    width: 72px;
+    height: 40px;
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .burger{
     display: none;
 }
@@ -149,6 +160,105 @@ header{
     height: 100%;
     border-radius: 18px;
 }
+/*bmi sec*/
+
+.bmi-titles{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.bmi-titles p{
+    width: 50%;
+    margin-top: -32px;
+}
+.bmi-main{
+    width: 100%;
+    height: 490px;
+    margin-top: 70px;
+    background: rgb(34, 34, 34);
+}
+.table-form{
+    width: 80%;
+    height: 390px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+table {
+    border-collapse: collapse;
+}
+td,th{
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 15px 20px;
+}
+th{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+td{
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.bmi-calc{
+    width: 40%;
+    height: auto;
+}
+
+.bmi-p{
+    width: 100%;
+    margin-top: -24px;
+}
+.bmi-h4{
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+.bmi-form{
+    width: 60%;
+    height: 352px;
+}
+.form-r1 ,.form-r2{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+.form-r3{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 15px;
+}
+input{
+    width: 48%;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+    padding: 0px 0px 0px 10px;
+}
+select{
+    width: 50%;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+    padding: 0px 0px 0px 10px;
+}
+.form-r3 > select{
+    width: 100%;
+}
+
 
 /*team starts now*/
 .team-container{
@@ -339,7 +449,8 @@ footer{
     }
     /*footer*/
     footer{
-        height: auto;
+        /* height: auto; */
+        height: 1000px;
     }
     .footer-container{
         flex-direction: column;
@@ -358,5 +469,38 @@ footer{
     .bottom p{
         margin-top: 30px;
         margin-left: 10%;
+    }
+    /*bmi*/
+    .bmi-titles{
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    .bmi-titles p{
+        width: 70%;
+        margin-top: -20px;
+    }
+    .bmi-main{
+        margin-top: 30px;
+        /* height: auto; */
+        height: 830px;
+    }
+    .table-form{
+        height: auto;
+        flex-direction: column;
+    }
+    .bmi-calc{
+        width: 100%;
+    }
+    .bmi-form{
+        width: 100%;
+        height: auto;
+    }
+    .bmi-p{
+        width: 80%;
+        margin-top: -10px;
+        margin-bottom: 20px;
     }
 }
