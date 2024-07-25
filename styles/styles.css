@@ -119,7 +119,7 @@ header{
     margin-left: 150px;
     position: relative;
 }
-.hero-info-up , .hero-info-down{
+.hero-info-up , .dotspcl{
     width: 193px;
     height: 98px;
     display: flex;
@@ -130,23 +130,41 @@ header{
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
 }
-.hero-info-up h3 , .hero-info-down h3{
+.hero-info-up h3 {
     margin-top: 5px;
     margin-left: 10px;
- }
-.hero-info-up p, .hero-info-down p{
-   margin-top: -50px;
-   margin-left: 10px;
+ } 
+ .hero-info-up p{
+    margin-top: -50px;
+    margin-left: 10px;
 }
+ .hero-info-down h3{
+    margin-top: 7px;
+    margin-left: 55px;
+ } 
+ .hero-info-down p{
+    margin-top: -50px;
+    margin-left: 55px;
+ }
+
 .hero-info-up{
     position: absolute;
     top: 20%;
     right: -10%;
 }
-.hero-info-down{
+.dotspcl{
     position: absolute;
     bottom: 11%;
     left: -28%;
+}
+.dot {
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    background-color: #E6533C;
+    border-radius: 50%;
+    margin-top: 28px;
+    margin-left: 10px;
 }
 /*habit sec styles*/
 .habit-container{
@@ -482,15 +500,31 @@ footer{
     .banner-hero {
         margin-left: 0px;
     }
-    .hero-info-up , .hero-info-down{
+    .hero-info-up , .dotspcl{
         width: 145.91px;
         height: 74.09px;
     }
-    .hero-info-up h3 , .hero-info-down h3{
+    .hero-info-up h3{
         margin-top: 5px;
         margin-left: 10px;
      }
-    .hero-info-up p, .hero-info-down p{
+     .hero-info-down h3{
+        margin-left: 50px;
+     }
+     .hero-info-down p{
+        margin-top: -33px;
+        margin-left: 50px;
+     }
+     .dot{
+        height: 28px;
+        width: 28px;
+        margin-top: 22px;
+     }
+     .dotspcl{
+        bottom: 42%;
+        left: 1%;
+    }
+    .hero-info-up p{
        margin-top: -30px;
        margin-left: 10px;
     }
@@ -498,11 +532,7 @@ footer{
         top: 8%;
         right: 1%;
     }
-    .hero-info-down{
-        bottom: 42%;
-        left: 1%;
-    }
-    
+
     /*habit*/
     .habit-container{
         margin-top: 75%;
