@@ -249,6 +249,77 @@ header{
     width: 100%;
     height: 100%;
     border-radius: 18px;
+    margin-bottom: 20px;
+}
+/*diet sec edit*/
+.diet-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.diet-titles{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.diet-titles h3{
+    margin-top: -8px;
+}
+.diet-titles p{
+    width: 50%;
+    margin-top: -32px;
+}
+.diet-grid img{
+    height: 350px;
+    width: 270px;
+    border-radius: 18px;
+    filter: brightness(70%);
+    box-shadow: 4px 2px 0px rgba(179, 177, 177, 0.733);
+    /* margin-left: 0px; */
+    margin-top: 20px;
+}
+.diet-grid img:hover{
+    transform: translateY(5px);
+}
+
+.diet-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.diet-grid h4{
+    color: rgba(214, 207, 207, 0.822);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.diet-grid button{
+    width: 180px;
+    height: 45px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 42px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+}
+.diet-btn{
+    position: absolute;
+    top: 68%;
+    left: 20%;
+}
+.diet-grid{
+    width: 100%;
+    height: 420px;
+    margin-top:50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
 }
 /*bmi sec*/
 
@@ -575,6 +646,45 @@ footer{
     .run-right img{
         width: 100%;
         height: 100%;
+    }
+    /*diet sec*/
+    .diet-titles h3{
+        margin-top: -8px;
+    }
+    .diet-titles p{
+        width: 85%;
+        margin-top: -20px;
+    }
+    .diet-grid img{
+        height: 200px;
+        width: 140px;
+        border-radius: 18px;
+        filter: brightness(70%);
+        box-shadow: 4px 2px 0px rgba(179, 177, 177, 0.733);
+    }
+    .diet-grid{
+        width: 100%;
+        height: auto;
+        margin-top:20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 18px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .diet-grid h4{
+        font-size: 1.2rem;
+    }
+    .diet-grid button{
+        width: 120px;
+        height: 30px;
+        font-size: .8rem;
+        font-weight: 500;
+    }
+    .diet-btn{
+        position: absolute;
+        top: 65%;
+        left: 15%;
     }
     /*team*/
     .team-titles p{
