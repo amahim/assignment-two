@@ -306,6 +306,14 @@ header{
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
 }
+.show-btn {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+.diet-card:hover .show-btn{
+    display: block;
+}
 .diet-btn{
     position: absolute;
     top: 68%;
@@ -454,6 +462,7 @@ select{
     height: 265px;
     border-radius: 18px;
     filter: brightness(70%);
+    margin-left: 20px;
 }
 .team-card{
     position: relative;
@@ -470,7 +479,7 @@ select{
 .team-info{
     position: absolute;
     top: 62%;
-    left: 4%;
+    left: 10%;
 }
 /*footer*/
 
@@ -682,6 +691,7 @@ footer{
         font-weight: 500;
     }
     .diet-btn{
+        
         position: absolute;
         top: 65%;
         left: 15%;
