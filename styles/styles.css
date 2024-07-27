@@ -270,15 +270,27 @@ header{
     width: 50%;
     margin-top: -32px;
 }
+/*
 .diet-grid img{
     height: 350px;
     width: 270px;
     border-radius: 18px;
     filter: brightness(70%);
     box-shadow: 4px 2px 0px rgba(179, 177, 177, 0.733);
+    
+   margin-top: 20px;
+}
+*/
+.diet-grid img{
+    height: 90%;
+    width: 90%;
+    border-radius: 18px;
+    filter: brightness(70%);
+    box-shadow: 4px 2px 0px rgba(179, 177, 177, 0.733);
     /* margin-left: 0px; */
     margin-top: 20px;
 }
+
 .diet-grid img:hover{
     transform: translateY(5px);
 }
