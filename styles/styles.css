@@ -329,7 +329,7 @@ header{
 .diet-btn{
     position: absolute;
     top: 68%;
-    left: 20%;
+    left: 15%;
 }
 .diet-grid{
     width: 100%;
@@ -474,7 +474,7 @@ select{
     height: 265px;
     border-radius: 18px;
     filter: brightness(70%);
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 .team-card{
     position: relative;
