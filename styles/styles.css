@@ -55,7 +55,7 @@ header{
     gap: 50px;
     border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 40px;
-    padding: 0px 20px 0px 0px;
+    padding: 2px 20px 2px 2px;
 }
 .home{
     width: 72px;
